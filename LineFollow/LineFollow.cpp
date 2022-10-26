@@ -30,7 +30,7 @@ void Rover::ChipInit(
 
 bool Rover::GetLeftInput()
 {
-	return (bool)digitalRead(RightInputPin);
+	return (bool)digitalRead(LeftInputPin);
 }
 
 bool Rover::GetMiddleInput()
@@ -40,7 +40,7 @@ bool Rover::GetMiddleInput()
 
 bool Rover::GetRightInput()
 {
-	return (bool)digitalRead(LeftInputPin);
+	return (bool)digitalRead(RightInputPin);
 }
 
 void Rover::PivotLeft(int speed)
