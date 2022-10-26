@@ -38,11 +38,11 @@ void loop()
 {
   if (rover.GetMiddleInput())
   {
-    rover.GoStraight(255);
+    rover.GoStraight(255); // the 255 is the speed, speed must be between 0-255
   }
   else if (rover.GetLeftInput())
   {
-    rover.PivotLeft(126);
+    rover.PivotLeft(126); // again, speed
   }
   else if (rover.GetRightInput())
   {
